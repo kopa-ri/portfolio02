@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+
+*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+  
+
+/*基本*/
+body {
+    width: 100%;
+    height:100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:url(portphoto/port-all.png) no-repeat center/cover;
+    color:#645C51;
+    letter-spacing: 3px;
+    font-weight:400;
+}
+.fade-in-bottom {
+   opacity: 0;
+   animation-name: fadein-bottom;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-out;
+   animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+    
+    ul,li,dl,dt,dd {
+       
+        list-style: none;
+      }
+      
+      a { 
+        text-decoration: none;
+      }
+      
+      a:hover { 
+        transition: .1s;
+        cursor: pointer;
+      }
+      .n-inner {
+        width:80%;
+        height:100%;
+        margin:0 10%;
+        padding:6% 0 ;
+       
+      
+      }
+
+      .d-inner {
+        width:80%;
+        height:100%;
+        margin:0 10%;
+        padding:6% 0 ;
+        display: flex;
+        
+  }
+
+      /*TOP*/
+      .top{
+          width:100%;
+          height:100vh;
+         
+      }
+
+      
+
+     /*ナビゲーション*/
+
+     .top nav {
+         margin:0;
+         position:fixed;
+         top:30px;
+         left:0px;
+         width:10%;
+         z-index: 10;
+     }
+
+      .top nav li a {
+          color:#645C51;
+          font-size: 1.125rem;
+          font-style: italic;
+          display:block;
+          
+      }
+
+
+      .top nav li a:hover {
+        color:#fff;
+      }
+
+
+      .nav1 {
+          width:100%;
+          height:45px;
+          border: 1.5px solid #a8a882;
+          text-align: center;
+          margin-top: 20px;
+          line-height: 45px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+     }
+
+    .nav1:hover {
+        background: #a8a882;
+      }
+    
+
+      .nav2{
+        width:100%;
+        height:45px;
+        border: 1.5px solid #b4b4b4;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 45px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav2:hover {
+        background: #b4b4b4;
+      }
+
+
+    .nav3 {
+        width:100%;
+        height:45px;
+        border: 1.5px solid #d3bd60;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 45px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav3:hover {
+        background: #d3bd60;
+      }
+
+
+
+    /*title*/ 
+
+      .top-inner {
+          background: url(portphoto/topimage.png) no-repeat center/65%;
+          position: relative;
+
+      }
+
+     .top-title{
+        position: absolute;
+        top:42%;
+        left:40%;
+        width:20%;
+}
+
+.top-title h1 {
+    color: #e3ddd3;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 13px;
+    text-align: center;
+    line-height: 1.2;
+    background: url(portphoto/square.png) no-repeat center top/contain;
+    width:100%;
+    padding:12%;
+}
+
+.mainimage {
+    margin:0 auto;
+    margin-top:70px;
+}
+
+
+    /*profile*/
+
+    #pro {
+        width:100%;
+       
+    }
+   
+    .left {
+        width:60%;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+        font-style: italic;
+        letter-spacing: 10px;
+        color:#867e52;
+        margin-left:6%;
+    }
+
+
+    .left h3 {
+        font-size:1.875rem;
+        font-style: italic;
+        color:#d3bd60;
+        margin-left:10%;
+    }
+
+   .text {
+        width:75%;
+        margin:0 auto;
+        background: url(portphoto/shape01.png) no-repeat right top/100%;
+    }
+
+    .high {
+        font-size:1.5rem;
+    }
+
+
+    .text li {
+       margin-bottom:15px;
+    }
+
+    .left p {
+        font-size:1.25rem;
+        margin-left:10%;
+    }
+
+  .right{ 
+    width:40%;
+    margin-top: 20px;
+    
+    }
+
+    .right img {
+        width:70%;
+        object-fit: cover;
+        margin-top:50px;
+    }
+
+    
+
+/*vision*/
+
+.v-inner {
+    width:95%;
+    height:100%;
+    margin-left:7%;
+    padding:6% 0;
+}
+
+
+.vision-c {
+    width:75%;
+    height:auto;
+    margin-left:25%;
+    line-height: 1.6;
+    background:rgba(211, 189, 96, 0.5)
+    
+}
+#vi ul {
+    padding:3% 5%;
+}
+
+.vision-c li {
+    margin-bottom: 45px;
+}
+
+
+.vision-c li:last-child {
+    margin-bottom:0;
+}
+
+
+.vision-c h2 {
+    font-size: 1.25rem;
+    font-weight:200;
+    margin-bottom:10px;
+    border-bottom:1px solid #B18D5F;
+   
+}
+
+.vision-c p {
+    font-size:0.875rem;
+}
+
+/*works*/
+
+.works-table {
+    display: flex;
+    justify-content: space-around;
+    margin:30px auto;
+    width:85%;
+} 
+
+.item {
+    width:30%;
+    margin-bottom:30px;
+    opacity: 1;
+}
+
+
+ .w-img {
+      width:100%;
+      margin-bottom:7%;
+      object-fit: cover;
+      box-shadow: 0 2px 4px rgba(3,3,3,.09);
+      display: block;
+  }
+
+  
+
+  .w-text {
+    color:#867e52;
+  }
+  
+  
+  .item:hover .w-img{
+    transition: 0.3s;
+    opacity: .7;
+    display: block;
+    box-shadow: 0 8px 12px rgba(0,0,0,.12);
+    margin-top:-5px;
+    
+  }
+  
+/*footer*/
+
+  footer {
+      width:100%;
+      background: url(portphoto/フッター背景.png) no-repeat;
+  }
+
+
+.f-inner,.f-nav ul{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.f-nav {
+   height:100%;
+   line-height: 250px;
+   margin:0 auto; 
+}
+
+
+.f-item {
+    color:#e3ddd3;
+    font-size:1.125rem;
+    margin-right:50px;
+}
+
+.icon {
+    width:15%;
+    margin-right:10%;
+}
+
+.icon h1 {
+    background: url(portphoto/square.png) no-repeat center top/contain;
+    margin-top:80px;
+    width:100%;
+    height:50%;
+    padding-top:20px;
+    color: #e3ddd3;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 13px;
+    text-align: center;
+    line-height: 1.2;
+}
+  
+.f-item:hover,.icon:hover {
+    opacity: .6;
+}
+
+/*レスポンシブ*/
+
+@media screen and (max-width: 896px) {
+    
+    html {
+        font-size:14px;
+    }
+
+    .top{
+        height:80vh;
+    }
+
+    .title {
+        padding-top: 145px;
+        height: 90%;
+    }
+
+    .vision-c {
+        margin:5% 10% 0 10%;
+        
+    }
+
+
+    .n-inner {
+        width: 70%;
+        height: 100%;
+        margin: 0 15%;
+        padding: 6% 0;
+    }
+    .works-table {
+        display: unset;
+        margin:20% auto;
+        width:80%;
+    
+    } 
+    
+    .item {
+        width:80%;
+        margin-bottom:30px;
+        opacity: 1;
+    }
+    
+    
+     .w-img {
+        margin: 10%;
+      }
+    
+      .w-text {
+        color:#867e52;
+        margin-left:12%;
+      }
+      
+        .right img {
+            width:100%;
+            object-fit: cover;
+            margin-top:100px;
+        }
+
+}
